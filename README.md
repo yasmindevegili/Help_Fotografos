@@ -2,8 +2,8 @@
 ### It was created to help people whom need to find photographers and photographers that want to expose their work.
 Here at GitHub I could host its main page, go take a look and let me know what you have found! 
 <br>
-<a href="https://github.com/yasmindevegili/Help_Fotografos.github.io/tree/main/documentation" type="button" class="btn btn-danger">Go to the project!</a>
-I've also published its documents, <a href="https://Help_fotografos.com" type="button" class="btn btn-danger">click here</a>
+<a href="https://Help_fotografos.com" type="button" class="btn btn-danger">Go to the project!</a>
+I've also published its documents, <a href="https://github.com/yasmindevegili/Help_Fotografos.github.io/tree/main/documentation" type="button" class="btn btn-danger">click here</a>
 to see the oficial version in portuguese, the databases design and a sql file as well.
 <br>
 <br>
