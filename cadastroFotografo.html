@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help! Fotógrafos</title>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Guntur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="pag_inicial.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="stylesheet" type="text/css" href="cadastroFotografo.css">
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: url(imagens/help6.png) no-repeat 100% 100%;
+    background-size: 1225px 1120px;
+    background-position: top;
+    font-family: Montserrat, sans-serif;
+  }  
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Alata', sans-serif;
+ }
+.collapse{
+    box-sizing: border-box;
+    width: 90%;
+  }
+.loginbox {
+    margin: 100px;
+    width: 450px;
+    height: 900px;
+    background-color: white;
+    color: black;
+    top: 78%;
+    left: 42%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 4%;
+}
+ .loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 17px;  
+ }
+
+ .loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ .loginbox input[type="text"], input[type="password"],  input[type="email"] {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: black;
+    font-size: 15px;
+ }
+
+ .loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 10px;
+    color: black;
+ }
+
+ .loginbox a:hover{
+    color: #363636;
+    font-size: 12.2px;
+ }
+
+ .botao input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #da0000;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+ }
+
+ .botao input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ba0000;
+    color: black;
+ }
+    
+    .logocadfoto{
+    margin-top: -15px;
+} 
+
+</style>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <href="#myPage"><class="logo">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="pag_inicial.html"> <img class="logocadfoto" src="logo/help_logo.png " height="50" width="120" > </a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="loginbox">
+    <h1>CADASTRO DO FOTÓGRAFO</h1>
+
+    <form action="cadastrofoto_process.php" method="post">
+            <p>CPF</p>
+            <input type="text" name="cpf" placeholder="000.000.000-00" required="">
+            <p>Telefone para contato</p>
+            <input type="tel" name="tel" placeholder="(xx) xxxxx-xxxx" required="">
+            <p>Cidade</p>
+            <input type="text" name="cidade" placeholder="Digite sua cidade" required="">
+            <p>Estado</p>
+            <input type="text" name="estado" placeholder="Digite seu estado" required="">
+            <p>Biografia</p>
+            <input type="text" name="bio" placeholder="Digite uma breve biografia" required="">
+            <p>Selecione sua foto de perfil</p>
+            <input type="file" name="foto_perfil" required="">
+            <p>Aproveite e linke seu Facebook</p>
+            <input type="text" name="facebook" required="">
+            <p>Aproveite e linke seu Instagram</p>
+            <input type="text" name="instagram" required="">
+            <p>Aproveite e linke seu Linkedin</p>
+            <input type="text" name="linkedin" required="">
+            <p></p>
+            <br>
+
+    <p class="botao">
+    <input type="submit" name='enviar' value="Enviar"/>
+    </p>
+
+    </form>
+    </div>
+</body>
+</html>
